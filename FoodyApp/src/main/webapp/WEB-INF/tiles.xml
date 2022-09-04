@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+        <put-attribute name="content" value="" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chu" />
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="DANG NHAP" />
+        <put-attribute name="content" value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="DANG KY" />
+        <put-attribute name="content" value="/WEB-INF/jsp/register.jsp" />
+    </definition>
+    <definition name="register-store" extends="baseLayout">
+        <put-attribute name="title" value="Dang Ky Cua Hang" />
+        <put-attribute name="content" value="/WEB-INF/jsp/register-store.jsp" />
+    </definition>
+    <definition name="store-food" extends="baseLayout">
+        <put-attribute name="title" value="Store Foody" />
+        <put-attribute name="content" value="/WEB-INF/jsp/store-food.jsp" />
+    </definition>
+    <definition name="register-food" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký món ăn" />
+        <put-attribute name="content" value="/WEB-INF/jsp/register-food.jsp" />
+    </definition>
+    <definition name="food" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký món ăn" />
+        <put-attribute name="content" value="/WEB-INF/jsp/food.jsp" />
+    </definition>
+    <definition name="cart" extends="baseLayout">
+        <put-attribute name="title" value="Gio hang" />
+        <put-attribute name="content" value="/WEB-INF/jsp/cart.jsp" />
+    </definition>
+    <definition name="baseAdminLayout" template="/WEB-INF/layout/base-admin.jsp">
+        <put-attribute name="header" value="/WEB-INF/layout/admin-header.jsp" />
+        <put-attribute name="title" value="Quan Tri" />
+        <put-attribute name="left" value="/WEB-INF/layout/admin-left.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/admin-footer.jsp" />
+        <put-attribute name="content" value="" />
+    </definition>
+    <definition name="category-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thong ke theo doanh muc" />
+        <put-attribute name="content" value="/WEB-INF/jsp/category-stats.jsp" />
+    </definition>
+    <definition name="store-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thong ke doanh thu theo cua hang" />
+        <put-attribute name="content" value="/WEB-INF/jsp/store-stats.jsp" />
+    </definition>
+    <definition name="store-month-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thong ke doanh thu theo thang" />
+        <put-attribute name="content" value="/WEB-INF/jsp/store-month-stats.jsp" />
+    </definition>
+    
+</tiles-definitions>
+
